@@ -116,12 +116,17 @@ function send_email($data,$file){
 	    
 	    $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      
 	    $mail->isSMTP();                                            
-	    $mail->Host       = 'smtp.gmail.com';                     
+	    //$mail->Host       = 'smtp.gmail.com';   
+	    $mail->Host       = 'mail.gruporobles.com.pe';                     
 	    $mail->SMTPAuth   = true;                                   
-	    $mail->Username   = 'sistemasrobles23@gmail.com';                     
-	    $mail->Password   = 'fsfd tsdg pous pbif';                              
-	    $mail->SMTPSecure = 'tls';           
-	    $mail->Port       = 587;                                    
+	    //$mail->Username   = 'sistemasrobles23@gmail.com';     
+	    $mail->Username   = 'notificaciones@gruporobles.com.pe';                  
+	    //$mail->Password   = 'fsfd tsdg pous pbif';    
+	    $mail->Password   = '$ROBLESSISTEMAS$';                              
+	    //$mail->SMTPSecure = 'tls'; 
+	    $mail->SMTPSecure = 'ssl';           
+	    //$mail->Port       = 587;  
+	    $mail->Port       = 465;                                    
 
 	   
 		$mail->CharSet = 'UTF-8';
@@ -244,7 +249,7 @@ if ($is_valid_fichero["status"] == "ok" ) {
         	$middleSend = send_email($_POST,$is_valid_fichero["data"]);
 
         	var_dump($middleSend);
-        	
+
         	die();
 
         	$response = set_response('ok','se procesó correctamente el registro',[]);
