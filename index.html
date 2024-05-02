@@ -889,7 +889,6 @@
           </div>
           <div class="swiper-slide patrocinador-swiper">
             <img
-              style="height: 100px"
               class="image-responsive-contain"
               src="./assets/logo-swiper/patro-du.png"
               alt="supermercados du"
@@ -898,7 +897,6 @@
 
           <div class="swiper-slide patrocinador-swiper">
             <img
-              style="height: 100px"
               class="image-responsive-contain"
               src="./assets/logo-swiper/patro-lord.png"
               alt="lordinmobiliaria"
@@ -907,7 +905,6 @@
 
           <div class="swiper-slide patrocinador-swiper">
             <img
-              style="height: 100px"
               class="image-responsive-contain"
               src="./assets/logo-swiper/patro-factura.png"
               alt="mi factura"
@@ -1572,6 +1569,13 @@
       centeredSlides: true,
       slidesPerView: "2.1",
       loop: true,
+      breakpoints: {
+        // cuando la anchura es >= 320px
+        517: {
+            slidesPerView: 5,
+            spaceBetween: 10
+        },
+    },
       coverflowEffect: {
         rotate: 0,
         stretch: 0,
@@ -1586,7 +1590,14 @@
 
     const swiper = new Swiper(".swiper", {
       loop: true,
-      slidesPerView: 5,
+      slidesPerView: 4,
+      breakpoints: {
+        // cuando la anchura es >= 320px
+        517: {
+            slidesPerView: 5,
+            spaceBetween: 10
+        },
+    },
       autoplay: {
         delay: 4000,
         disableOnInteraction: false,
