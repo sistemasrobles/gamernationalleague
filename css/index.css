@@ -126,6 +126,9 @@ video {
 .sub-title {
   color: #bab9bb;
 }
+.pe-auto-cursor{
+  cursor: pointer;
+}
 /**redes sociales*/
 .redes-social {
   -webkit-clip-path: polygon(
