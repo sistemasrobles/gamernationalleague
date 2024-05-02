@@ -1,0 +1,1618 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>gamernationalleague</title>
+    <link rel="stylesheet" href="./css/index.css?=4" />
+    <!-- <script
+      src="https://kit.fontawesome.com/88c0a098dd.js"
+      crossorigin="anonymous"
+    ></script> -->
+
+    <link rel="stylesheet" href="assets/icons/fontawesome/css/all.css" />
+
+
+     <link rel="stylesheet" href="assets/alertify/css/alertify.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body class="position-relative">
+    <div class="redes-social">
+      <a href="https://www.facebook.com/people/Gamer-National-League/61558668983180/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+      <a href="https://www.facebook.com/people/Gamer-National-League/61558668983180/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+      <a href="https://www.instagram.com/gamer.national.gamer" target="_blank" class="text-center"
+        ><i class="fa-brands fa-instagram"></i
+      ></a>
+      <a href="https://api.whatsapp.com/send?phone=51943382371" target="_blank" class="text-center"
+        ><i class="fa-brands fa-whatsapp"></i
+      ></a>
+    </div>
+    <!-- CONTENIDO PRINCIPAL-->
+    <main class="container-fluid position-relative">
+      <video
+        class="video-main-port"
+        autoplay
+        muted
+        loop
+        src="https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/homepage/dota_montage_02.mp4"
+      ></video>
+
+      <div
+        style="height: 100%; margin: 0 auto"
+        class="container-xl container-lg container-md container-sm container grid-main"
+      >
+        <!-- informacion principal -->
+        <div
+          style="z-index: 1"
+          class="col-1-main text-light d-flex flex-column justify-content-center align-items-center"
+        >
+          <div class="container-logo">
+            <img
+              class="image-responsive"
+              src="./assets/logo-league.png"
+              alt="Logo gamernationalleague"
+            />
+          </div>
+          <h2 class="text-open text-uppercase text-center">18 y 19 de mayo</h2>
+          <span
+            class="d-flex flex-column justify-content-center align-items-center"
+          >
+            <h2
+              class="text-open fs-1 text-uppercase color-primary mb-0"
+              style="font-size: 4rem !important"
+            >
+              Gran premio
+            </h2>
+            <h1 class="precio text-open text-uppercase mb-0 text-center">
+              S/ 5000
+            </h1>
+          </span>
+
+          <a
+            href="#formulario"
+            class="btn-gamer btn-suscribete text-uppercase text-open mt-4 gap-3 d-flex justify-content-center align-items-center"
+          >
+            <i class="fa-solid fa-angles-right"></i>
+            Registrarse
+            <div class="edgtf-btn-bg-holder"></div>
+          </a>
+        </div>
+        <!-- Swiper Main -->
+        <div
+          style="z-index: 2"
+          class="text-light position-relative swiper-main d-flex gap-5 justify-content-center align-items-center flex-column"
+        >
+          <div
+            class="position-relative justify-content-center align-items-center d-flex"
+          >
+            <!-- cuenta regresiva -->
+            <div id="cuentaRegresiva" class="regresiva gap-4">
+              <span
+                class="counter d-flex flex-column gap-2 mb-0 justify-content-center align-items-center"
+              >
+                <p
+                  class="mb-0 text-uppercase rajdhani-semibold"
+                  style="letter-spacing: 3px !important; font-size: 0.8rem"
+                >
+                  dias
+                </p>
+                <p
+                  id="dia"
+                  class="mb-0 text-open fs-1"
+                  style="line-height: 1"
+                ></p>
+              </span>
+              <span
+                class="counter d-flex flex-column gap-2 justify-content-center align-items-center"
+              >
+                <p
+                  class="mb-0 text-uppercase rajdhani-semibold"
+                  style="letter-spacing: 3px !important; font-size: 0.8rem"
+                >
+                  horas
+                </p>
+                <p
+                  id="hora"
+                  class="mb-0 text-open fs-1"
+                  style="line-height: 1"
+                ></p>
+              </span>
+              <span
+                class="counter d-flex flex-column gap-2 justify-content-center align-items-center"
+              >
+                <p
+                  class="mb-0 text-uppercase rajdhani-semibold"
+                  style="letter-spacing: 3px !important; font-size: 0.8rem"
+                >
+                  minutos
+                </p>
+                <p
+                  id="minuto"
+                  class="mb-0 text-open fs-1"
+                  style="line-height: 1"
+                ></p>
+              </span>
+
+              <div
+                class="counter d-flex flex-column gap-2 justify-content-center align-items-center"
+              >
+                <p
+                  class="mb-0 text-uppercase rajdhani-semibold"
+                  style="letter-spacing: 3px !important; font-size: 0.8rem"
+                >
+                  segundos
+                </p>
+                <p
+                  id="segundo"
+                  class="mb-0 text-open fs-1"
+                  style="line-height: 1"
+                ></p>
+              </div>
+            </div>
+            <video
+              class="video-main"
+              autoplay
+              muted
+              loop
+              src="https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/heroes/renders/bane.webm"
+            ></video>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- section 2 -->
+    <section
+      class="container-xl container-lg container-md container-sm container py-5 text-light"
+    >
+      <div
+        style="height: 100%"
+        class="row row-cols-lg-2 row-cols-xl-2 align-items-center justify-content-center"
+      >
+        <div class="container-image-section-2">
+          <img
+            class="image-responsive-contain"
+            src="https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/heroes/renders/void_spirit.png"
+            alt="Dota 2"
+          />
+        </div>
+        <div class="order-first order-lg-last order-xl-last">
+          <div
+            data-aos="fade-left"
+            class="d-flex justify-content-center align-items-center gap-3"
+          >
+            <h2 class="text-open title-gamer text-uppercase rigth-text">
+              ¡ Prepárate para vivir la emoción del Dota 2 !
+            </h2>
+            <p class="mb-0 min-title text-uppercase">
+              <b class="color-primary">#</b>dotaheroarena
+            </p>
+          </div>
+          <p data-aos="fade-left" class="rigth-text sub-title">
+            Gamer National League no solo es un evento deportivo, sino también
+            una celebración de la comunidad de Dota 2, donde jugadores y
+            aficionados se reúnen para compartir su pasión por el juego y
+            disfrutar de la emoción de la competencia en un ambiente lleno de
+            energía y camaradería.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- section video -->
+    <!-- <section
+      class="container-xl d-flex justify-content-center align-items-center py-5"
+    >
+     <video autoplay muted src="https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/homepage/dota_montage_02.mp4"></video>
+    </section> -->
+
+    <!-- section invitados -->
+    <section
+      class="container-xl container-lg container-md container-sm container py-5 text-light mb-5"
+    >
+      <div
+        data-aos="fade-down-right"
+        class="d-flex justify-content-start align-items-center gap-3 mb-5"
+      >
+        <p class="mb-0 min-title text-uppercase">
+          <b class="color-primary">#</b>dotaheroarena
+        </p>
+        <h2 class="text-open title-gamer text-uppercase">
+          NUESTROS CASTERS <br />
+          INVITADOS
+        </h2>
+      </div>
+      <div class="grid-auto-caster">
+        <div
+          data-aos="zoom-out-down"
+          data-aos-delay="100"
+          class="tarjeta-caster"
+          style="padding: 0px !important"
+        >
+          <p
+            class="mt-4 text-uppercase color-primary"
+            style="font-size: 0.7rem; letter-spacing: 3px"
+          >
+            dota 2
+          </p>
+
+          <h4 class="text-uppercase text-open mt-4">Tio inka</h4>
+          <span class="d-flex gap-3 justify-content-center align-items-center">
+            <a
+              target="_blank"
+              href="https://www.twitch.tv/tioinka"
+              class="text-white"
+              ><i class="redes-caster fa-brands fa-twitch"></i
+            ></a>
+            <a
+              target="_blank"
+              href="https://www.facebook.com/gaming/inkast1993"
+              class="text-white"
+              ><i class="redes-caster fa-brands fa-facebook"></i
+            ></a>
+            <a
+              target="_blank"
+              href="https://www.instagram.com/tioinka21/"
+              class="text-white"
+              ><i class="redes-caster fa-brands fa-instagram"></i
+            ></a>
+          </span>
+
+          <div style="max-width: 100%; padding: 0px; height: 314px">
+            <img
+              class="image-responsive-contain"
+              src="./assets/caster/inka.png"
+              alt="logo"
+            />
+          </div>
+        </div>
+
+        <!--card invitador  -->
+        <div
+          data-aos="zoom-out-down"
+          class="tarjeta-caster"
+          style="padding: 0px !important"
+        >
+          <p
+            class="mt-4 text-uppercase color-primary"
+            style="font-size: 0.7rem; letter-spacing: 3px"
+          >
+            dota 2
+          </p>
+
+          <h4 class="text-uppercase text-open mt-4">Mr Choco</h4>
+          <span class="d-flex gap-3 justify-content-center align-items-center">
+            <a
+              target="_blank"
+              href="https://www.twitch.tv/mrchoco"
+              class="text-white"
+              ><i class="redes-caster fa-brands fa-twitch"></i
+            ></a>
+            <a
+              target="_blank"
+              href="https://www.facebook.com/MrChocoPeru"
+              class="text-white"
+              ><i class="redes-caster fa-brands fa-facebook"></i
+            ></a>
+            <a
+              target="_blank"
+              href="https://www.instagram.com/mrchoconero/"
+              class="text-white"
+              ><i class="redes-caster fa-brands fa-instagram"></i
+            ></a>
+          </span>
+          <div style="max-width: 100%; padding: 0px; height: 314px">
+            <img
+              class="image-responsive-contain"
+              src="./assets/caster/Mr-Choco.png"
+              alt="logo"
+            />
+          </div>
+        </div>
+
+        <div
+          data-aos="zoom-out-down"
+          data-aos-delay="200"
+          class="tarjeta-caster"
+          style="padding: 0px !important"
+        >
+          <p
+            class="mt-4 text-uppercase color-primary"
+            style="font-size: 0.7rem; letter-spacing: 3px"
+          >
+            dota 2
+          </p>
+
+          <h4 class="text-uppercase text-open mt-4">Cutipo</h4>
+          <span class="d-flex gap-3 justify-content-center align-items-center">
+            <a
+              target="_blank"
+              href="https://www.twitch.tv/cutipo"
+              class="text-white"
+              ><i class="redes-caster fa-brands fa-twitch"></i
+            ></a>
+            <a
+              target="_blank"
+              href="https://www.facebook.com/Cutipocast"
+              class="text-white"
+              ><i class="redes-caster fa-brands fa-facebook"></i
+            ></a>
+            <a
+              target="_blank"
+              href="https://www.instagram.com/cutipocast/"
+              class="text-white"
+              ><i class="redes-caster fa-brands fa-instagram"></i
+            ></a>
+          </span>
+
+          <div style="max-width: 100%; padding: 0px; height: 314px">
+            <img
+              class="image-responsive-contain"
+              src="./assets/caster/cutipo.png"
+              alt="logo"
+            />
+          </div>
+        </div>
+
+        <div
+          data-aos="zoom-out-down"
+          data-aos-delay="100"
+          class="tarjeta-caster d-none"
+          style="padding: 0px !important"
+        >
+          <p
+            class="mt-4 text-uppercase color-primary"
+            style="font-size: 0.7rem; letter-spacing: 3px"
+          >
+            dota 2
+          </p>
+
+          <h4 class="text-uppercase text-open mt-4">Tio inka</h4>
+          <span class="d-flex gap-3 justify-content-center align-items-center">
+            <a
+              target="_blank"
+              href="https://www.twitch.tv/tioinka"
+              class="text-white"
+              ><i class="redes-caster fa-brands fa-twitch"></i
+            ></a>
+            <a
+              target="_blank"
+              href="https://www.facebook.com/gaming/inkast1993"
+              class="text-white"
+              ><i class="redes-caster fa-brands fa-facebook"></i
+            ></a>
+            <a
+              target="_blank"
+              href="https://www.instagram.com/tioinka21/"
+              class="text-white"
+              ><i class="redes-caster fa-brands fa-instagram"></i
+            ></a>
+          </span>
+
+          <div style="max-width: 100%; padding: 0px; height: 314px">
+            <img
+              class="image-responsive-contain"
+              src="./assets/caster/inka.png"
+              alt="logo"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section invitados -->
+    <section
+      class="container-xl container-lg container-md container-sm container py-5 text-light mb-5 d-none"
+    >
+      <div
+        data-aos="fade-down-right"
+        class="d-flex justify-content-start align-items-center gap-3 mb-5"
+      >
+        <p class="mb-0 min-title text-uppercase">
+          <b class="color-primary">#</b>DOTAHEROARENA
+        </p>
+        <h2 class="text-open title-gamer text-uppercase">
+          NO TE PIERDAS <br />
+          NUESTRAS CLASIFICATORIAS
+        </h2>
+      </div>
+      <div class="grid-auto-video">
+        <!--card invitador  -->
+        <div
+          data-aos="zoom-out-down"
+          data-aos-delay="200"
+          class="tarjeta-caster video-stre d-flex flex-column gap-1 justify-content-end align-items-start"
+        >
+          <p class="mb-0 text-uppercase rajdhani-semibold">
+            18 de mayo 2024 / 10:00 AM / dota 2
+          </p>
+          <h2 class="text-open mb-0 text-uppercase">Sesión 01 - semifinales</h2>
+          <span
+            class="mb-0 d-flex gap-3 justify-content-between"
+            style="width: 100%"
+          >
+            <p
+              class="mb-0 text-uppercase rajdhani-semibold fs-5 d-flex gap-2 align-items-center"
+            >
+              <i class="color-primary fs-6 fa-solid fa-money-bill-wave"></i> 15k
+            </p>
+            <p
+              class="mb-0 text-uppercase rajdhani-semibold fs-5 d-flex gap-2 align-items-center"
+            >
+              <i class="color-primary fs-6 fa-solid fa-gamepad"></i>5v5
+            </p>
+            <p
+              class="mb-0 text-uppercase rajdhani-semibold fs-5 d-flex gap-2 align-items-center"
+            >
+              <i class="color-primary fs-6 fa-solid fa-desktop"></i>pc
+            </p>
+            <p
+              class="mb-0 text-uppercase rajdhani-semibold fs-5 d-flex gap-2 align-items-center"
+            >
+              <i class="color-primary fs-6 fa-solid fa-sitemap"></i> 54/54
+            </p>
+          </span>
+        </div>
+        <!--card invitador  -->
+        <div
+          data-aos="zoom-out-down"
+          data-aos-delay="300"
+          class="tarjeta-caster video-stre2 d-flex flex-column gap-1 justify-content-end align-items-start"
+        >
+          <p class="mb-0 text-uppercase rajdhani-semibold">
+            19 de mayo 2024 / 10:00 AM / dota 2
+          </p>
+          <h2 class="text-open mb-0 text-uppercase">Sesión 01 - finales</h2>
+          <span
+            class="mb-0 d-flex gap-3 justify-content-between"
+            style="width: 100%"
+          >
+            <p
+              class="mb-0 text-uppercase rajdhani-semibold fs-5 d-flex gap-2 align-items-center"
+            >
+              <i class="color-primary fs-6 fa-solid fa-money-bill-wave"></i> 25k
+            </p>
+            <p
+              class="mb-0 text-uppercase rajdhani-semibold fs-5 d-flex gap-2 align-items-center"
+            >
+              <i class="color-primary fs-6 fa-solid fa-gamepad"></i>5v5
+            </p>
+            <p
+              class="mb-0 text-uppercase rajdhani-semibold fs-5 d-flex gap-2 align-items-center"
+            >
+              <i class="color-primary fs-6 fa-solid fa-desktop"></i>pc
+            </p>
+            <p
+              class="mb-0 text-uppercase rajdhani-semibold fs-5 d-flex gap-2 align-items-center"
+            >
+              <i class="color-primary fs-6 fa-solid fa-sitemap"></i> 54/54
+            </p>
+          </span>
+        </div>
+        <!--card invitador  -->
+        <div
+          data-aos="zoom-out-down"
+          data-aos-delay="400"
+          class="tarjeta-caster video-stre3 d-flex flex-column gap-1 justify-content-end align-items-start"
+        >
+          <p class="mb-0 text-uppercase rajdhani-semibold">
+            26 de mayo 2024 / 10:00 AM / dota 2
+          </p>
+          <h2 class="text-open mb-0 text-uppercase text-start">
+            Sesión 02 - semifinales
+          </h2>
+          <span
+            class="mb-0 d-flex gap-3 justify-content-between"
+            style="width: 100%"
+          >
+            <p
+              class="mb-0 text-uppercase rajdhani-semibold fs-5 d-flex gap-2 align-items-center"
+            >
+              <i class="color-primary fs-6 fa-solid fa-money-bill-wave"></i> 5k
+            </p>
+            <p
+              class="mb-0 text-uppercase rajdhani-semibold fs-5 d-flex gap-2 align-items-center"
+            >
+              <i class="color-primary fs-6 fa-solid fa-gamepad"></i>5v5
+            </p>
+            <p
+              class="mb-0 text-uppercase rajdhani-semibold fs-5 d-flex gap-2 align-items-center"
+            >
+              <i class="color-primary fs-6 fa-solid fa-desktop"></i>pc
+            </p>
+            <p
+              class="mb-0 text-uppercase rajdhani-semibold fs-5 d-flex gap-2 align-items-center"
+            >
+              <i class="color-primary fs-6 fa-solid fa-sitemap"></i> 54/54
+            </p>
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- equipos participante -->
+    <section
+      class="container-xl container-lg container-md container-sm container py-5 text-light d-none"
+    >
+      <div
+        data-aos="fade-left"
+        class="d-flex justify-content-end align-items-center gap-3 mb-5"
+      >
+        <h2 class="text-open title-gamer text-uppercase rigth-text">
+          RESULTADOS DE <br />
+          PARTIDAS RECIENTES
+        </h2>
+        <p class="mb-0 min-title text-uppercase">
+          <b class="color-primary">#</b>DOTAHEROARENA
+        </p>
+      </div>
+
+      <!-- grid equipos -->
+      <div class="row row-cols-1 g-4">
+        <!-- una fila -->
+        <div
+          class="d-flex flex-lg-row flex-xl-row flex-column flex-md-column flex-sm-column gap-5 mb-5"
+        >
+          <!-- div team -->
+          <div class="container-team">
+            <div class="position-relative">
+              <div class="container-logo-team">
+                <img
+                  class="position-absolute image-responsive-contain"
+                  src="./assets/logo/acatsuki.png "
+                  alt="team-logo"
+                />
+              </div>
+              <span
+                class="trasparent-team d-flex py-2 justify-content-between mb-2"
+              >
+                <i style="color: rgb(243, 52, 52)" class="fa-solid fa-star"></i>
+                <p class="text-open text-uppercase fs-1 mb-0">PSYCHOPATHS</p>
+              </span>
+            </div>
+            <span
+              class="d-flex gap-3 justify-content-end align-items-center px-3"
+            >
+              <p class="mb-0 color-primary text-uppercase">
+                <span style="letter-spacing: 3px; font-size: 0.7rem">Ver</span>
+              </p>
+              <i class="redes-caster fa-brands fa-twitch"></i>
+              <i class="redes-caster fa-brands fa-youtube"></i>
+            </span>
+          </div>
+          <!-- container-hora -->
+          <div
+            class="d-flex justify-content-center align-items-center flex-column gap-1 mb-0"
+          >
+            <span class="text-open text-uppercase d-flex gap-3 mb-0 fs-1">
+              0
+              <p class="mb-0">:</p>
+              0</span
+            >
+            <p
+              style="font-size: 0.8rem; letter-spacing: 2px"
+              class="mb-0 text-center text-uppercase color-primary"
+            >
+              18.05.24<br />10:00 AM
+            </p>
+          </div>
+          <div class="container-team">
+            <div class="position-relative">
+              <div class="container-logo-team-reverse">
+                <img
+                  class="position-absolute image-responsive-contain"
+                  src="./assets/logo/qhali.png "
+                  alt="team-logo"
+                />
+              </div>
+              <span
+                class="trasparent-team d-flex py-2 justify-content-between mb-2"
+              >
+                <p class="text-open text-uppercase fs-1 mb-0">Qhali</p>
+                <i style="color: rgb(243, 52, 52)" class="fa-solid fa-star"></i>
+              </span>
+            </div>
+            <span
+              class="d-flex gap-3 justify-content-start px-4 align-items-center"
+            >
+              <p class="mb-0 color-primary text-uppercase">
+                <span style="letter-spacing: 3px; font-size: 0.7rem">Ver</span>
+              </p>
+              <i class="redes-caster fa-brands fa-twitch"></i>
+              <i class="redes-caster fa-brands fa-youtube"></i>
+            </span>
+          </div>
+        </div>
+
+        <div
+          class="d-flex flex-lg-row flex-xl-row flex-column flex-md-column flex-sm-column gap-5 mb-5"
+        >
+          <!-- div team -->
+          <div class="container-team">
+            <div class="position-relative">
+              <div class="container-logo-team">
+                <img
+                  class="position-absolute image-responsive-contain"
+                  src="./assets/logo/fantasy.png "
+                  alt="team-logo"
+                />
+              </div>
+              <span
+                class="trasparent-team d-flex py-2 justify-content-between mb-2"
+              >
+                <i style="color: rgb(243, 52, 52)" class="fa-solid fa-star"></i>
+                <p class="text-open text-uppercase fs-1 mb-0">Fantasy Gaming</p>
+              </span>
+            </div>
+            <span
+              class="d-flex gap-3 justify-content-end align-items-center px-3"
+            >
+              <p class="mb-0 color-primary text-uppercase">
+                <span style="letter-spacing: 3px; font-size: 0.7rem">Ver</span>
+              </p>
+              <i class="redes-caster fa-brands fa-twitch"></i>
+              <i class="redes-caster fa-brands fa-youtube"></i>
+            </span>
+          </div>
+          <!-- container-hora -->
+          <div
+            class="d-flex justify-content-center align-items-center flex-column gap-1 mb-0"
+          >
+            <span class="text-open text-uppercase d-flex gap-3 mb-0 fs-1">
+              0
+              <p class="mb-0">:</p>
+              0</span
+            >
+            <p
+              style="font-size: 0.8rem; letter-spacing: 2px"
+              class="mb-0 text-center text-uppercase color-primary"
+            >
+              18.05.24<br />10:00 AM
+            </p>
+          </div>
+          <div class="container-team">
+            <div class="position-relative">
+              <div class="container-logo-team-reverse">
+                <img
+                  class="position-absolute image-responsive-contain"
+                  src="./assets/logo/bwarrios.png "
+                  alt="team-logo"
+                />
+              </div>
+              <span
+                class="trasparent-team d-flex py-2 justify-content-between mb-2"
+              >
+                <p class="text-open text-uppercase fs-1 mb-0">Best Warriors</p>
+                <i style="color: rgb(243, 52, 52)" class="fa-solid fa-star"></i>
+              </span>
+            </div>
+            <span
+              class="d-flex gap-3 justify-content-start px-4 align-items-center"
+            >
+              <p class="mb-0 color-primary text-uppercase">
+                <span style="letter-spacing: 3px; font-size: 0.7rem">Ver</span>
+              </p>
+              <i class="redes-caster fa-brands fa-twitch"></i>
+              <i class="redes-caster fa-brands fa-youtube"></i>
+            </span>
+          </div>
+        </div>
+
+        <div
+          class="d-flex flex-lg-row flex-xl-row flex-column flex-md-column flex-sm-column gap-5 mb-5"
+        >
+          <!-- div team -->
+          <div class="container-team">
+            <div class="position-relative">
+              <div class="container-logo-team">
+                <img
+                  class="position-absolute image-responsive-contain"
+                  src="./assets/logo/bwarrios.png "
+                  alt="team-logo"
+                />
+              </div>
+              <span
+                class="trasparent-team d-flex py-2 justify-content-between mb-2"
+              >
+                <i style="color: rgb(243, 52, 52)" class="fa-solid fa-star"></i>
+                <p class="text-open text-uppercase fs-1 mb-0">BEST WARRIORS</p>
+              </span>
+            </div>
+            <span
+              class="d-flex gap-3 justify-content-end align-items-center px-3"
+            >
+              <p class="mb-0 color-primary text-uppercase">
+                <span style="letter-spacing: 3px; font-size: 0.7rem">Ver</span>
+              </p>
+              <i class="redes-caster fa-brands fa-twitch"></i>
+              <i class="redes-caster fa-brands fa-youtube"></i>
+            </span>
+          </div>
+          <!-- container-hora -->
+          <div
+            class="d-flex justify-content-center align-items-center flex-column gap-1 mb-0"
+          >
+            <span class="text-open text-uppercase d-flex gap-3 mb-0 fs-1">
+              0
+              <p class="mb-0">:</p>
+              0</span
+            >
+            <p
+              style="font-size: 0.8rem; letter-spacing: 2px"
+              class="mb-0 text-center text-uppercase color-primary"
+            >
+              18.05.24<br />10:00 AM
+            </p>
+          </div>
+          <div class="container-team">
+            <div class="position-relative">
+              <div class="container-logo-team-reverse">
+                <img
+                  class="position-absolute image-responsive-contain"
+                  src="./assets/logo/qhali.png "
+                  alt="team-logo"
+                />
+              </div>
+              <span
+                class="trasparent-team d-flex py-2 justify-content-between mb-2"
+              >
+                <p class="text-open text-uppercase fs-1 mb-0">Qhali</p>
+                <i style="color: rgb(243, 52, 52)" class="fa-solid fa-star"></i>
+              </span>
+            </div>
+            <span
+              class="d-flex gap-3 justify-content-start px-4 align-items-center"
+            >
+              <p class="mb-0 color-primary text-uppercase">
+                <span style="letter-spacing: 3px; font-size: 0.7rem">Ver</span>
+              </p>
+              <i class="redes-caster fa-brands fa-twitch"></i>
+              <i class="redes-caster fa-brands fa-youtube"></i>
+            </span>
+          </div>
+        </div>
+
+        <div
+          class="d-flex flex-lg-row flex-xl-row flex-column flex-md-column flex-sm-column gap-5 mb-5"
+        >
+          <!-- div team -->
+          <div class="container-team">
+            <div class="position-relative">
+              <div class="container-logo-team">
+                <img
+                  class="position-absolute image-responsive-contain"
+                  src="./assets/logo/acatsuki.png "
+                  alt="team-logo"
+                />
+              </div>
+              <span
+                class="trasparent-team d-flex py-2 justify-content-between mb-2"
+              >
+                <i style="color: rgb(243, 52, 52)" class="fa-solid fa-star"></i>
+                <p class="text-open text-uppercase fs-1 mb-0">PSYCHOPATHS</p>
+              </span>
+            </div>
+            <span
+              class="d-flex gap-3 justify-content-end align-items-center px-3"
+            >
+              <p class="mb-0 color-primary text-uppercase">
+                <span style="letter-spacing: 3px; font-size: 0.7rem">Ver</span>
+              </p>
+              <i class="redes-caster fa-brands fa-twitch"></i>
+              <i class="redes-caster fa-brands fa-youtube"></i>
+            </span>
+          </div>
+          <!-- container-hora -->
+          <div
+            class="d-flex justify-content-center align-items-center flex-column gap-1 mb-0"
+          >
+            <span class="text-open text-uppercase d-flex gap-3 mb-0 fs-1">
+              0
+              <p class="mb-0">:</p>
+              0</span
+            >
+            <p
+              style="font-size: 0.8rem; letter-spacing: 2px"
+              class="mb-0 text-center text-uppercase color-primary"
+            >
+              18.05.24<br />10:00 AM
+            </p>
+          </div>
+          <div class="container-team">
+            <div class="position-relative">
+              <div class="container-logo-team-reverse">
+                <img
+                  class="position-absolute image-responsive-contain"
+                  src="./assets/logo/fantasy.png "
+                  alt="team-logo"
+                />
+              </div>
+              <span
+                class="trasparent-team d-flex py-2 justify-content-between mb-2"
+              >
+                <p class="text-open text-uppercase fs-1 mb-0">Fantasy Gaming</p>
+                <i style="color: rgb(243, 52, 52)" class="fa-solid fa-star"></i>
+              </span>
+            </div>
+            <span
+              class="d-flex gap-3 justify-content-start px-4 align-items-center"
+            >
+              <p class="mb-0 color-primary text-uppercase">
+                <span style="letter-spacing: 3px; font-size: 0.7rem">Ver</span>
+              </p>
+              <i class="redes-caster fa-brands fa-twitch"></i>
+              <i class="redes-caster fa-brands fa-youtube"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section patrocinadores -->
+    <section
+      class="container-xl container-lg container-md container-sm container py-5"
+    >
+      <div class="swiper" style="width: 100%">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide patrocinador-swiper">
+            <img
+              class="image-responsive-contain"
+              src="./assets/logo-swiper/patro-grupo-eco.png"
+              alt="eco plaza"
+            />
+          </div>
+
+          <div class="swiper-slide patrocinador-swiper">
+            <img
+              class="image-responsive-contain"
+              src="./assets/logo-swiper/patro-incavp.png"
+              alt="incavp"
+            />
+          </div>
+          <div class="swiper-slide patrocinador-swiper">
+            <img
+              class="image-responsive-contain"
+              src="./assets/logo-swiper/patro-two.png"
+              alt="two tecnology"
+            />
+          </div>
+          <div class="swiper-slide patrocinador-swiper">
+            <img
+              style="height: 100px"
+              class="image-responsive-contain"
+              src="./assets/logo-swiper/patro-du.png"
+              alt="supermercados du"
+            />
+          </div>
+
+          <div class="swiper-slide patrocinador-swiper">
+            <img
+              style="height: 100px"
+              class="image-responsive-contain"
+              src="./assets/logo-swiper/patro-lord.png"
+              alt="lordinmobiliaria"
+            />
+          </div>
+
+          <div class="swiper-slide patrocinador-swiper">
+            <img
+              style="height: 100px"
+              class="image-responsive-contain"
+              src="./assets/logo-swiper/patro-factura.png"
+              alt="mi factura"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- horarios de jugadores -->
+    <section
+      class="container-xl container-lg container-md container-sm container py-5 text-light mb-5 d-none"
+    >
+      <div
+        data-aos="fade-down-right"
+        class="d-flex justify-content-start align-items-center gap-3 mb-5"
+      >
+        <p class="mb-0 min-title text-uppercase">
+          <b class="color-primary">#</b>DOTAHEROARENA
+        </p>
+        <h2 class="text-open title-gamer text-uppercase">
+          CONOCE LOS<br />
+          PRÓXIMOS ENCUENTROS
+        </h2>
+      </div>
+
+      <!-- horarios -->
+      <div class="d-flex flex-column gap-4">
+        <!-- container.fechas -->
+        <div
+          class="trasparent-team fechas-div d-flex py-2 px-5 align-items-center"
+        >
+          <p class="mb-0 text-open text-uppercase font-4-horario">
+            18 de mayo 2024
+          </p>
+          <h3 class="mb-0 text-open fs-1-p text-uppercase">10:00am - 7:00pm</h3>
+          <p class="mb-0 text-open text-uppercase font-4-horario text-end">
+            semifinales sesión 01
+          </p>
+        </div>
+        <!-- container.fechas -->
+        <div
+          class="trasparent-team fechas-div d-flex py-2 px-5 align-items-center"
+        >
+          <p class="mb-0 text-open text-uppercase font-4-horario d-flex">
+            19 de mayo 2024
+          </p>
+          <h3 class="mb-0 text-open fs-1-p text-uppercase d-flex">
+            10:00am - 7:00pm
+          </h3>
+          <p
+            class="mb-0 text-open text-uppercase font-4-horario d-flex justify-content-end text-end"
+          >
+            finales sesión 01
+          </p>
+        </div>
+
+        <!-- container.not streaming -->
+        <div class="d-flex justify-content-center">
+          <div
+            class="trasparent-team fechas-div not-streaming d-flex py-2 px-5 color-primary align-items-center"
+          >
+            <p class="mb-0 text-open text-uppercase font-4-horario d-flex">
+              23 de mayo 2024
+            </p>
+            <h3 class="mb-0 text-open fs-1-p text-uppercase d-flex">
+              COMPETENCIA DE AMATEURS
+            </h3>
+          </div>
+        </div>
+
+        <!-- container.not streaming -->
+        <!--  <div class="d-flex justify-content-center">
+          <div
+            class="trasparent-team fechas-div not-streaming d-flex py-2 px-5 color-primary align-items-center"
+          >
+            <p class="mb-0 text-open text-uppercase font-4-horario d-flex">
+              wednesday
+            </p>
+            <h3 class="mb-0 text-open fs-1-p text-uppercase d-flex">
+              NOT STREAMING
+            </h3>
+          </div>
+        </div> -->
+        <!-- container.fechas -->
+        <div
+          class="trasparent-team fechas-div d-flex py-2 px-5 align-items-center"
+        >
+          <p class="mb-0 text-open text-uppercase font-4-horario">
+            25 de mayo 2024
+          </p>
+          <h3 class="mb-0 text-open fs-1-p text-uppercase">10:00am - 7:00pm</h3>
+          <p
+            class="mb-0 text-open text-uppercase font-4-horario justify-content-end text-end"
+          >
+            Semifinal sesión 02
+          </p>
+        </div>
+        <!-- container.fechas -->
+        <div
+          class="trasparent-team fechas-div d-flex py-2 px-5 align-items-center"
+        >
+          <p class="mb-0 text-open text-uppercase font-4-horario d-flex">
+            26 de mayo 2024
+          </p>
+          <h3 class="mb-0 text-open fs-1-p text-uppercase d-flex">
+            10:00am - 7:00pm
+          </h3>
+          <p
+            class="mb-0 text-open text-uppercase font-4-horario d-flex justify-content-end text-end"
+          >
+            finales sesión 02
+          </p>
+        </div>
+        <!-- container.not streaming -->
+        <div class="d-flex justify-content-center">
+          <div
+            class="trasparent-team fechas-div not-streaming d-flex py-2 px-5 color-primary align-items-center"
+          >
+            <p class="mb-0 text-open text-uppercase font-4-horario d-flex">
+              30 de mayo 2024
+            </p>
+            <h3 class="mb-0 text-open fs-1-p text-uppercase d-flex">
+              COMPETENCIA DE AMATEURS
+            </h3>
+          </div>
+        </div>
+        <!-- container.fechas -->
+        <div
+          class="trasparent-team fechas-div d-flex py-2 px-5 align-items-center"
+        >
+          <p class="mb-0 text-open text-uppercase font-4-horario d-flex">
+            1 de junio
+          </p>
+          <h3 class="mb-0 text-open fs-1-p text-uppercase d-flex">
+            10:00pm - 7:00pm
+          </h3>
+          <p
+            class="mb-0 text-open text-uppercase font-4-horario justify-content-end text-end d-flex"
+          >
+            SEMIFINALES sesión 03
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Formulario -->
+    <section
+      id="formulario"
+      class="container-xl container-lg container-md container-sm container py-5 text-light mb-5"
+    >
+      <div
+        class="row row-cols-lg-2 row-cols-xl-2 row-cols-md-1 row-cols-sm-1 g-5"
+      >
+        <!-- columna 1 text informacion -->
+        <div class="">
+          <div class="d-flex flex-column gap-4 align-items-start info-form">
+            <h2 class="text-uppercase text-open">
+              INSCRIBE
+              <b class="color-primary">A TU EQUIPO,</b> DEMUESTRA
+              <b class="color-primary">TODO TU POTENCIAL</b> EN EL MUNDO
+              <b class="color-primary">DEL DOTA</b>
+            </h2>
+            <div class="container-image-section-2">
+              <img
+                class="image-responsive-contain"
+                src="https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/heroes/renders/antimage.png"
+                alt="Dota 2"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- container formulario -->
+
+        <div class="container-for">
+          <!-- form -->
+          <form id="dota2-torneo" class="d-flex flex-column gap-3">
+            <!-- capitan registro -->
+            <label class="text-open text-uppercase fs-4">Capitan <span class="text-danger">*</span> </label>
+            <!-- <span id="error-forms" class="text-danger"></span> -->
+            <div class="form-control">
+              <input
+                id="nameTeam"
+                class="input input-alt"
+                name="nameTeam"
+                placeholder="Nombre de equipo"
+                required
+                type="text"
+                autocomplete ="off"
+              />
+              <span class="input-border input-border-alt"></span>
+            </div>
+            <span class="text-danger" id="nameTeam-error"></span>
+            <div class="form-control">
+              <input
+                id="NameCapitan"
+                name="NameCapitan"
+                class="input input-alt"
+                placeholder="Nombres Completos del Capitan"
+                required
+                type="text"
+                autocomplete ="off"
+              />
+              <span class="input-border input-border-alt"></span>
+            </div>
+            <span class="text-danger" id="NameCapitan-error"></span>
+            <div class="form-control">
+              <input
+                id="TelCapitan"
+                name="TelCapitan"
+                class="input input-alt"
+                placeholder="Celular del Capitan"
+                required
+                type="text"
+                autocomplete ="off"
+              />
+              <span class="input-border input-border-alt"></span>
+            </div>
+            <span class="text-danger" id="TelCapitan-error"></span>
+            <!-- jugador 2 registro -->
+            <label class="text-open text-uppercase fs-4 mt-3">Jugador 2 <span class="text-danger">*</span></label>
+            <div class="form-control">
+              <input
+                id="NamePlayer2"
+                name="NamePlayer2"
+                class="input input-alt"
+                placeholder="Nombres Completos (jugador 2)"
+                required
+                type="text"
+                autocomplete ="off"
+              />
+              <span class="input-border input-border-alt"></span>
+            </div>
+            <span class="text-danger" id="NamePlayer2-error"></span>
+            <div class="form-control">
+              <input
+                id="TelPlayer2"
+                name="TelPlayer2"
+                class="input input-alt"
+                placeholder="Celular (jugador 2)"
+                required
+                type="text"
+                autocomplete ="off"
+              />
+              <span class="input-border input-border-alt"></span>
+            </div>
+            <span class="text-danger" id="TelPlayer2-error"></span>
+            <!-- jugador 3 registro -->
+            <label class="text-open text-uppercase fs-4 mt-3">Jugador 3 <span class="text-danger">*</span></label>
+            <div class="form-control">
+              <input
+                id="NamePlayer3"
+                name="NamePlayer3"
+                class="input input-alt"
+                placeholder="Nombres Completos (jugador 3)"
+                required
+                type="text"
+                autocomplete ="off"
+              />
+              <span class="input-border input-border-alt"></span>
+            </div>
+            <span class="text-danger" id="NamePlayer3-error"></span>
+            <div class="form-control">
+              <input
+                id="TelPlayer3"
+                name="TelPlayer3"
+                class="input input-alt"
+                placeholder="Celular (jugador 3)"
+                required
+                type="text"
+                autocomplete ="off"
+              />
+              <span class="input-border input-border-alt"></span>
+            </div>
+            <span class="text-danger" id="TelPlayer3-error"></span>
+            <!-- jugador 4 registro -->
+            <label class="text-open text-uppercase fs-4 mt-3">Jugador 4 <span class="text-danger">*</span></label>
+            <div class="form-control">
+              <input
+                id="NamePlayer4"
+                name="NamePlayer4"
+                class="input input-alt"
+                placeholder="Nombres Completos (jugador 4)"
+                required
+                type="text"
+                autocomplete ="off"
+              />
+              <span class="input-border input-border-alt"></span>
+            </div>
+            <span class="text-danger" id="NamePlayer4-error"></span>
+            <div class="form-control">
+              <input
+                id="TelPlayer4"
+                name="TelPlayer4"
+                class="input input-alt"
+                placeholder="Celular (jugador 4)"
+                required
+                type="text"
+                autocomplete ="off"
+              />
+              <span class="input-border input-border-alt"></span>
+            </div>
+            <span class="text-danger" id="TelPlayer4-error"></span>
+            <!-- jugador 5 registro -->
+            <label class="text-open text-uppercase fs-4 mt-3">Jugador 5 <span class="text-danger">*</span></label>
+            <div class="form-control">
+              <input
+                id="NamePlayer5"
+                name="NamePlayer5"
+                class="input input-alt"
+                placeholder="Nombres Completos (jugador 5)"
+                required
+                type="text"
+                autocomplete ="off"
+              />
+              <span class="input-border input-border-alt"></span>
+            </div>
+            <span class="text-danger" id="NamePlayer5-error"></span>
+
+            <div class="form-control">
+              <input
+                id="TelPlayer5"
+                name="TelPlayer5"
+                class="input input-alt"
+                placeholder="Celular (jugador 5)"
+                required=""
+                type="text"
+                autocomplete ="off"
+              />
+              <span class="input-border input-border-alt"></span>
+            </div>
+            <span class="text-danger" id="TelPlayer5-error"></span>
+            <!-- subir ficheros -->
+            <div class="mt-5 d-flex gap-4 flex-column overhidden">
+              <div class="d-flex gap-4">
+                <label for="comprobante" class="open-file">
+                  <span class="file-wrapper">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 71 67"
+                    >
+                      <path
+                        stroke-width="5"
+                        stroke="white"
+                        d="M41.7322 11.7678L42.4645 12.5H43.5H68.5V64.5H2.5V2.5H32.4645L41.7322 11.7678Z"
+                      ></path>
+                    </svg>
+                    <span class="file-front"></span>
+                  </span>
+                  Adjunta tu comprobante <span class="text-danger">*</span>
+                </label>
+                <label
+                  class="open-file order-first"
+                  data-bs-toggle="modal"
+                  data-bs-target="#miModal"
+                >
+                  Click aquí para pagar con Yape o Plin
+                </label>
+                
+              </div>
+              <span class="text-danger" id="comprobante-error"></span>
+              <!-- checkbox form -->
+              <label class="material-checkbox">
+                <input type="checkbox" id="datos-personales" class="overhidden" name="datos-personales"/>
+                <span class="checkmark"></span>
+                Autorizar el uso de mis datos personales
+              </label>
+              <label
+                class="vinculo-reglamento material-checkbox"
+                data-bs-toggle="modal"
+                data-bs-target="#reglamento"
+              >
+                <input type="checkbox" id="deacuerdo" name="deacuerdo" required/>
+                <span class="checkmark"></span>
+                Estoy de acuerdo con el reglamento del torneo
+              </label>
+              <span class="text-danger px-4" id="deacuerdo-error"></span>
+            </div>
+          
+            <input class="visually-hidden" name="comprobante" id="comprobante" type="file"  required />
+
+
+
+            <div>
+              <span id="error-server"></span>
+            </div>
+
+
+            <button
+              type="submit"
+              class="btn-suscribete text-uppercase text-open mt-4 edgtf-btn"
+            >
+              Registrate
+              <div class="edgtf-btn-bg-holder"></div>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- section ultimo -->
+    <footer
+      class="container-fluid d-flex justify-content-center align-items-center flex-column gap-1 text-white py-3"
+    >
+      <div class="d-flex gap-4 image-footer d-none">
+        <img
+          style="width: 100px"
+          src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/valve_logo.png"
+          alt="dota 2"
+        />
+        <img
+          style="width: 120px"
+          src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/dota_footer_logo.png"
+          alt="dota 2"
+        />
+      </div>
+
+      <p class="mb-0 text-center rajdhani-semibold fs-6">
+        Todos los derechos reservados @gamernationalleague2024
+      </p>
+    </footer>
+  </body>
+  <!-- modals  -->
+
+  <!-- modal QR -->
+  <div
+    class="modal fade"
+    id="miModal"
+    data-bs-keyboard="false"
+    tabindex="-1"
+    aria-labelledby="staticBackdropLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-dialog-centered">
+      <div style="background-color: rgb(20, 20, 20)" class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-white" id="staticBackdropLabel">
+            Escanea el QR de pago
+          </h5>
+        </div>
+        <div class="modal-body">
+          <img
+            class="image-responsive-contain"
+            src="./assets/newqr.png"
+            alt="qr yape"
+          />
+        </div>
+        <div class="modal-footer">
+          <button
+            type="button"
+            class="btn-suscribete text-uppercase text-open"
+            data-bs-dismiss="modal"
+          >
+            Volver
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- modal Reglamento -->
+  <div
+    class="modal fade"
+    id="reglamento"
+    data-bs-keyboard="false"
+    tabindex="-1"
+    aria-labelledby="staticBackdropLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div style="background-color: rgb(20, 20, 20)" class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-white" id="staticBackdropLabel">
+            Reglamento del torneo
+          </h5>
+        </div>
+        <div class="modal-body text-white d-flex flex-column gap-2">
+          <span class=""
+            ><b class="rajdhani-semibold fs-5">Modo:</b> Dota 2</span
+          >
+          <span class=""
+            ><b class="rajdhani-semibold fs-5">Modalidad:</b> Eliminación por
+            Equipos.</span
+          >
+          <span class=""
+            ><b class="rajdhani-semibold fs-5">Plataforma:</b> PC
+            /Computadora.</span
+          >
+          <span class=""
+            ><b class="rajdhani-semibold fs-5">Plataforma: S/ 50.00</b>
+          </span>
+          <span class=""
+            ><b class="rajdhani-semibold fs-5">REGLAMENTO DEL TORNEO:</b> DOTA
+            2</span
+          >
+          <span class=""
+            ><b class="rajdhani-semibold text-uppercase fs-5"
+              >DE LOS PARTICIPANTES Están invitados a participar todos</b
+            ></span
+          >
+          <span class=""
+            ><b class="rajdhani-semibold text-uppercase fs-5"
+              >DE LAS INSCRIPCIONES</b
+            ></span
+          >
+          <span class=""
+            ><b class="rajdhani-semibold fs-5">3.1.</b> Los equipos deberán
+            inscribirse a través del link de inscripción. Solo el capitán del
+            equipo deberá responder al formulario, en el mismo se solicitarán
+            los datos de cada equipo</span
+          >
+          <span class=""
+            ><b class="rajdhani-semibold text-uppercase fs-5"
+              >DEL REGLAMENTO, MODALIDAD Y LA COMPETENCIA</b
+            ></span
+          >
+          <span class=""
+            ><b class="rajdhani-semibold fs-5">4.1.</b> De la modalidad</span
+          >
+          <span class=""
+            ><b class="rajdhani-semibold fs-5">4.1.1.</b> Por Equipos 5 vs 5 (05
+            competidores = 1 equipo).</span
+          >
+          <span class=""
+            ><b class="rajdhani-semibold fs-5">4.1.2.</b> La disciplina Dota 2
+            es una competencia grupal que se juega sobre la plataforma de Steam
+            en computadoras (pc), de la empresa Valve Corporation.</span
+          >
+          <span class=""
+            ><b class="rajdhani-semibold fs-5">4.2.</b> Del sistema de
+            Competencia. Toda la competencia se jugará en el servidor PERÚ. Los
+            torneos consistirán de una fase de grupos con partidas al mejor de 1
+            hasta llegar a las etapas de semifinales. Los 4 equipos clasificados
+            a las semifinales jugarán la segunda ronda, la cual consistirá en
+            unas llaves de eliminación a series al mejor de 3 (BO3).</span
+          >
+          <span class=""
+            ><b class="rajdhani-semibold fs-5">DE LOS RECLAMOS</b></span
+          >
+          <span class=""
+            ><b class="rajdhani-semibold fs-5">5.1.</b>El fallo del Comité
+            Organizador es definitivo, no estando sujeta a reclamo, revisión,
+            reconsideración ni apelación. Los detalles, enfrentamientos y
+            horarios de cada día del torneo serán informados a los participantes
+            con al menos 24 horas de anticipación al inicio del torneo durante
+            el congresillo técnico previo al torneo .La primera fase tendrá como
+            fechas de juegos los días entre el 16 y 17 de Mayo.
+          </span>
+          <span class=""
+            ><b class="rajdhani-semibold fs-5"
+              >4.3. Lag y desconexiones</b
+            ></span
+          >
+          <span class=""
+            ><b class="rajdhani-semibold fs-5">4.3.1.</b> En caso se detecte que
+            el lag o latencia de la conexión esté interfiriendo con el
+            desarrollo de la partida, un equipo deberá comunicarlo durante los
+            primeros 5 minutos de partida, en caso contrario, no se atenderá el
+            reclamo.</span
+          >
+          <span class=""
+            ><b class="rajdhani-semibold fs-5">4.3.2.</b> Si un jugador se
+            desconecta, el equipo deberá de pausar la partida inmediatamente.
+            Las pausas por desconexión utilizan el tiempo normal de pausa
+            permitido por equipo.</span
+          >
+          <span class=""
+            ><b class="rajdhani-semibold fs-5">4.3.3.</b> El jugador que se
+            desconecta por mal fe, será penalizado abruptamente por la
+            organización del campeonato.</span
+          >
+          <span class=""
+            ><b class="rajdhani-semibold fs-5">4.3.4.</b> Para probar cualquier
+            tipo de trampa o queja, el jugador debe hablar con la organización
+            del campeonato.</span
+          >
+          <span class=""
+            ><b class="rajdhani-semibold fs-5">4.4.</b> Infracciones y
+            sanciones</span
+          >
+          <span class=""
+            ><b class="rajdhani-semibold fs-5">4.4.1.</b> El equipo participante
+            que viole las disposiciones del reglamento será penalizado bajo los
+            términos del Comité Organizador:</span
+          >
+          <span class=""
+            ><b class="rajdhani-semibold fs-5">4.4.2</b> Las personas
+            autorizadas por CGE para administrar el torneo gamer serán referidos
+            como ‘admin’ y el conjunto de todos los admin´s serán referidos como
+            ‘administración’. Estos serán los encargados de velar por el orden
+            del juego de inicio a fin y tendrán la última palabra en caso se
+            decida algo.</span
+          >
+          <span class=""
+            ><b class="rajdhani-semibold fs-5">4.4.3</b> La administración se
+            reserva el derecho de cambiar las reglas y regulaciones en cualquier
+            momento, incluso en el transcurso del torneo para hacer los ajustes
+            necesarios si la situación lo requiere y de ser necesario hacer caso
+            omiso de las mismas en pro de asegurar un juego justo.</span
+          >
+          <span class=""
+            ><b class="rajdhani-semibold fs-5">4.4.4</b> Todos los casos no
+            presentados explícitamente en este reglamento serán resueltos por la
+            Administración del Torneo Gamer. Todas las decisiones tomadas por la
+            Administración deben ser respetadas y ejecutadas en el momento
+            oportuno.</span
+          >
+          <span class=""
+            ><b class="rajdhani-semibold fs-5">4.4.5</b> Todo participante tiene
+            la obligación de tratar de ganar cada encuentro del Torneo Gamer.
+            Perder un juego apropósito está prohibido y será penalizado al igual
+            que el uso de programas externos que sean considerados una ventaja
+            injusta.</span
+          >
+          <span class=""
+            ><b class="rajdhani-semibold fs-5">4.4.6</b> En caso no se respete
+            las reglas o decisiones de la Administración, no haya respeto en las
+            pausas del equipo contrario haya alguna falta de respeto hacia el
+            otro equipo u algún “Admin”, se dará por perdida el juego o hasta la
+            descalificación al equipo del Torneo Gamer, dependiendo la gravedad
+            de la falta.</span
+          >
+          <span class=""
+            ><b class="rajdhani-semibold fs-5">4.5</b> Administracion de
+            dispositivos: Todos los participantes utilizaran los equipos que les
+            administremos (pc y monitor), sin embargo, cada uno puede traer su
+            teclado, mouse o auricular de preferencia..</span
+          >
+        </div>
+        <div class="modal-footer">
+          <button
+            type="button"
+            class="btn-suscribete text-uppercase text-open"
+            data-bs-dismiss="modal"
+          >
+            Volver
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+ <div class="loading-container">
+    <div class="loading-gif"></div>
+</div>
+ 
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"
+  ></script>
+  <script type="module">
+    import Swiper from "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs";
+    const swiperMain = new Swiper(".swiper_container", {
+      effect: "coverflow",
+      centeredSlides: true,
+      slidesPerView: "2.1",
+      loop: true,
+      coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 300,
+        modifier: 1,
+      },
+      autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+      },
+    });
+
+    const swiper = new Swiper(".swiper", {
+      loop: true,
+      slidesPerView: 5,
+      autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+      },
+    });
+  </script>
+
+     
+<script src="assets/alertify/alertify.js"></script>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/smooth-scroll@16/dist/smooth-scroll.polyfills.min.js"></script>
+  <script>
+    // Inicializar Smooth Scroll
+    var scroll = new SmoothScroll('a[href*="#"]', {
+      speed: 200,
+      speedAsDuration: true,
+    });
+  </script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="./js/cursor.js"></script>
+  <script src="./js/count.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+  <script src="./js/form.js"></script>
+</html>
