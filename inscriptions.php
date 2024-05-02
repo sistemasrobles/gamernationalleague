@@ -114,7 +114,7 @@ function send_email($data,$file){
 
 	try {
 	    
-	    $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      
+	    //$mail->SMTPDebug = SMTP::DEBUG_SERVER;                      
 	    $mail->isSMTP();                                            
 	    //$mail->Host       = 'smtp.gmail.com';   
 	    $mail->Host       = 'mail.gruporobles.com.pe';                     
