@@ -131,7 +131,7 @@ function send_email($data,$file){
 	   
 		$mail->CharSet = 'UTF-8';
 
-		 $mail->setFrom('sistemasrobles23@gmail.com', 'Gamer National League');
+		 $mail->setFrom('notificaciones@gruporobles.com.pe', 'Gamer National League');
 
 
 		$mail->addCC('miguel.alfonzo@killyazu.com.pe');
@@ -248,9 +248,7 @@ if ($is_valid_fichero["status"] == "ok" ) {
 
         	$middleSend = send_email($_POST,$is_valid_fichero["data"]);
 
-        	var_dump($middleSend);
-
-        	die();
+        	
 
         	$response = set_response('ok','se procesó correctamente el registro',[]);
 
