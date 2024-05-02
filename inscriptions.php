@@ -243,6 +243,8 @@ if ($is_valid_fichero["status"] == "ok" ) {
 
         	$middleSend = send_email($_POST,$is_valid_fichero["data"]);
 
+        	var_dump($middleSend);
+        	die();
 
         	$response = set_response('ok','se procesó correctamente el registro',[]);
 
