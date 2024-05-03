@@ -724,6 +724,13 @@ footer > p {
     top: 20%;
   }
 }
+@media (max-width: 1355px){
+  .grid-auto-caster {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)) !important;
+    gap: 30px;
+  }
+}
 @media (max-width: 1255px) {
   .counter p:nth-child(2) {
     font-size: 3rem !important;
