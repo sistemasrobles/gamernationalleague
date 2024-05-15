@@ -1,4 +1,4 @@
-var clock = new Date("2024-05-17 22:00:00"); 
+var clock = new Date("2024-06-17 22:00:00"); 
 var intervalo = setInterval(mostrar_hora, 1000); 
 
 function mostrar_hora() {
